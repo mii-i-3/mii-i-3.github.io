@@ -1,0 +1,168 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>スピリチュアル性格診断</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .group {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .group h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+        }
+        #submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>スピリチュアル性格診断</h1>
+    <form id="spiritual-form">
+        <div class="group" id="group-A">
+            <h2>A群：自然と共感のグループ</h2>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A1" name="A" value="自然や植物と深いつながり">
+                <label for="A1">自然や植物と深いつながりを感じる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A2" name="A" value="クリスタルやハーブに興味">
+                <label for="A2">クリスタルやハーブに興味がある</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A3" name="A" value="人や動物の感情を敏感に感じる">
+                <label for="A3">人や動物の感情を敏感に感じる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A4" name="A" value="水に癒される">
+                <label for="A4">水（海・川・温泉）に癒される</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A5" name="A" value="地球との調和を大切にしている">
+                <label for="A5">地球との調和を大切にしている</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A6" name="A" value="瞑想やリラクゼーションを重視する">
+                <label for="A6">瞑想やリラクゼーションを重視する</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="A7" name="A" value="自然の中で創造性を発揮できる">
+                <label for="A7">自然の中で創造性を発揮できる</label>
+            </div>
+        </div>
+
+        <div class="group" id="group-B">
+            <h2>B群：創造性と表現のグループ</h2>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B1" name="B" value="音楽・アートが好き">
+                <label for="B1">音楽・アート・ダンスが好き</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B2" name="B" value="独自の視点で物事を見る">
+                <label for="B2">独自の視点で物事を見る</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B3" name="B" value="夢や空想の世界に没頭できる">
+                <label for="B3">夢や空想の世界に没頭できる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B4" name="B" value="体を動かすことが好き">
+                <label for="B4">体を動かすことが好き</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B5" name="B" value="美的センスにこだわりがある">
+                <label for="B5">美的センスにこだわりがある</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B6" name="B" value="独創的な問題解決が得意">
+                <label for="B6">独創的な問題解決が得意</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="B7" name="B" value="芸術・文化イベントに興味がある">
+                <label for="B7">芸術・文化イベントに興味がある</label>
+            </div>
+        </div>
+
+        <div class="group" id="group-C">
+            <h2>C群：直感と神秘のグループ</h2>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C1" name="C" value="古代文明に強く惹かれる">
+                <label for="C1">古代文明に強く惹かれる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C2" name="C" value="直感が鋭い">
+                <label for="C2">直感が鋭い</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C3" name="C" value="サイキック能力を感じる">
+                <label for="C3">サイキック能力を感じる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C4" name="C" value="水生物に親しみを感じる">
+                <label for="C4">水生物（イルカ・クジラ）に親しみを感じる</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C5" name="C" value="伝統的な儀式に興味がある">
+                <label for="C5">伝統的な儀式に興味がある</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C6" name="C" value="冷静で落ち着いた雰囲気">
+                <label for="C6">冷静で落ち着いた雰囲気</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="C7" name="C" value="夢からメッセージを受け取る">
+                <label for="C7">夢からメッセージを受け取る</label>
+            </div>
+        </div>
+
+        <div class="group" id="group-D">
+            <h2>D群：科学と論理のグループ</h2>
+            <div class="checkbox-item">
+                <input type="checkbox" id="D1" name="D" value="テクノロジーに興味がある">
+                <label for="D1">テクノロジーに興味がある</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="D2" name="D" value="理論的思考が得意">
+                <label for="D2">理論的思考が得意</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="D3" name="D" value="データや事実を重視する">
+                <label for="D3">データや事実を重視する</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="D4" name="D" value="宇宙や未来技術
